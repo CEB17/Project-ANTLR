@@ -21,8 +21,6 @@ INPUT_DATA  : [cdefginopsux];
 OUTPUT_DATA : [cdeEfgGinopsuxX];
 OUTPUT_FORMAT : '\\'[bfnrt0vaN'"?\\] ;
 
-=======
-OUTPUT_DATA : '\\'[bfnrt0vaN'"?\\] ;
 VAR         : [a-zA-Z]+[a-zA-Z0-9]*;
 NUM         : [0-9]+;
 
