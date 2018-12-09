@@ -37,6 +37,16 @@ public interface inputoutputListener extends ParseTreeListener {
 	 */
 	void exitD_type(inputoutputParser.D_typeContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link inputoutputParser#ret}.
+	 * @param ctx the parse tree
+	 */
+	void enterRet(inputoutputParser.RetContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link inputoutputParser#ret}.
+	 * @param ctx the parse tree
+	 */
+	void exitRet(inputoutputParser.RetContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link inputoutputParser#input}.
 	 * @param ctx the parse tree
 	 */
@@ -66,14 +76,4 @@ public interface inputoutputListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitInput_d(inputoutputParser.Input_dContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link inputoutputParser#format}.
-	 * @param ctx the parse tree
-	 */
-	void enterFormat(inputoutputParser.FormatContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link inputoutputParser#format}.
-	 * @param ctx the parse tree
-	 */
-	void exitFormat(inputoutputParser.FormatContext ctx);
 }

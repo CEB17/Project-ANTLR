@@ -51,6 +51,18 @@ public class inputoutputBaseListener implements inputoutputListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterRet(inputoutputParser.RetContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitRet(inputoutputParser.RetContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterInput(inputoutputParser.InputContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -82,18 +94,6 @@ public class inputoutputBaseListener implements inputoutputListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitInput_d(inputoutputParser.Input_dContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterFormat(inputoutputParser.FormatContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitFormat(inputoutputParser.FormatContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
