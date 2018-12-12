@@ -76,4 +76,54 @@ public interface inputoutputListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitInput_d(inputoutputParser.Input_dContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link inputoutputParser#format}.
+	 * @param ctx the parse tree
+	 */
+	void enterFormat(inputoutputParser.FormatContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link inputoutputParser#format}.
+	 * @param ctx the parse tree
+	 */
+	void exitFormat(inputoutputParser.FormatContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link inputoutputParser#variable}.
+	 * @param ctx the parse tree
+	 */
+	void enterVariable(inputoutputParser.VariableContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link inputoutputParser#variable}.
+	 * @param ctx the parse tree
+	 */
+	void exitVariable(inputoutputParser.VariableContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link inputoutputParser#sign}.
+	 * @param ctx the parse tree
+	 */
+	void enterSign(inputoutputParser.SignContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link inputoutputParser#sign}.
+	 * @param ctx the parse tree
+	 */
+	void exitSign(inputoutputParser.SignContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link inputoutputParser#empty_arr}.
+	 * @param ctx the parse tree
+	 */
+	void enterEmpty_arr(inputoutputParser.Empty_arrContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link inputoutputParser#empty_arr}.
+	 * @param ctx the parse tree
+	 */
+	void exitEmpty_arr(inputoutputParser.Empty_arrContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link inputoutputParser#arr}.
+	 * @param ctx the parse tree
+	 */
+	void enterArr(inputoutputParser.ArrContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link inputoutputParser#arr}.
+	 * @param ctx the parse tree
+	 */
+	void exitArr(inputoutputParser.ArrContext ctx);
 }
