@@ -17,6 +17,16 @@ public interface inputoutputListener extends ParseTreeListener {
 	 */
 	void exitStruktur(inputoutputParser.StrukturContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link inputoutputParser#function}.
+	 * @param ctx the parse tree
+	 */
+	void enterFunction(inputoutputParser.FunctionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link inputoutputParser#function}.
+	 * @param ctx the parse tree
+	 */
+	void exitFunction(inputoutputParser.FunctionContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link inputoutputParser#parameter}.
 	 * @param ctx the parse tree
 	 */
