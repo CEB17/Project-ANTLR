@@ -3,13 +3,16 @@ grammar inputoutput;
 struktur: function                                              //Fungsi dan tipe data
         | input                                                 //Fungsi scanf()
         | output                                                //Fungsi printf()
+        | call
         ;
 
-function : d_type variable '(' parameter ')' '{' (input|output)*  ret ';' '}'
-         | 'void' variable '(' parameter ')' '{' (input|output)* '}'
+function : d_type variable '(' parameter ')' '{' (input|output|call)*  ret ';' '}'
+         | 'void' variable '(' parameter ')' '{' (input|output|call)* '}'
          ;
 //Parameter fungsi
 parameter: (((d_type | 'void') '*'? variable (arr|empty_arr)? ','?)*) ; 
+
+call     : variable'('('*'+|'&')?variable?(','('*'+|'&')?variable)*')'';' ;
 
 //Tipe data
 d_type:('unsigned' | 'signed')?((('short' | ('long' 'long'?))? 'int') | 'char')| 'long'? 'double' | 'float';

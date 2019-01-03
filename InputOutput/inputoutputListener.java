@@ -37,6 +37,16 @@ public interface inputoutputListener extends ParseTreeListener {
 	 */
 	void exitParameter(inputoutputParser.ParameterContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link inputoutputParser#call}.
+	 * @param ctx the parse tree
+	 */
+	void enterCall(inputoutputParser.CallContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link inputoutputParser#call}.
+	 * @param ctx the parse tree
+	 */
+	void exitCall(inputoutputParser.CallContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link inputoutputParser#d_type}.
 	 * @param ctx the parse tree
 	 */

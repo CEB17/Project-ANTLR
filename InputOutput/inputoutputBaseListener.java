@@ -51,6 +51,18 @@ public class inputoutputBaseListener implements inputoutputListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterCall(inputoutputParser.CallContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitCall(inputoutputParser.CallContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterD_type(inputoutputParser.D_typeContext ctx) { }
 	/**
 	 * {@inheritDoc}
